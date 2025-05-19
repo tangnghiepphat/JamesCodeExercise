@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <style>
+        h2{
+            padding-left: 20px;
+        }
+        form {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        label {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        select {
+            margin-bottom: 15px;
+        }
+
+        input {
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="simpleform.html" method="get" class="form">
+        <h2>Order Form</h2>
+
+            <ol>
+
+               <li><label for="buysomething">What would you like to buy?</label></li> 
+                <select id="buysomething" name="buysomething">
+                    <option value="" disabled selected>Select something that you want to buy</option>
+                    <option value="">A</option>
+                    <option value="">B</option>
+                    <option value="">C</option>
+                    <option value="">D</option>
+                </select>
+               <li> <label for="soluong">How many would you like to order?</label></li>
+                <input type="radio" name="rd" id="" /> 1 - 10$ </br>
+                <input type="radio" name="rd" id="" /> 2 - 15$ </br>
+                <input type="radio" name="rd" id="" /> 3 - 20$ </br>
+               <li> <label for="name" id="name">Name <span style="color: red;">*</span></label></li>
+                <input id="fname" type="text" placeholder="First name"><input type="text" placeholder="Last name" id="lname">
+                <li><label for="email">Email</label></li>
+                <input type="text" placeholder="Your email">
+               <li> <label for="phone">Phone Number</label></li>
+                <input type="tel" placeholder="09xxxxxxxx" required>    
+            </ol>
+        <input type="submit" value="Submit">
+        </br><input type="reset">
+</body>
+
+</html>
