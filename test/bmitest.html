@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <input type="text" id="ddiem" placeholder="nhap diem">   
+ <! <button id="btn">Enter</button>
+  <h2 id="hide"></h2>
+<script>
+        function xetdiem(){
+    let a="";
+    let diem = Number(document.getElementById("ddiem").value);
+    if(diem <3 && diem >=0){a="yeu"}
+    else if(diem<=5 && diem>=3){a="kem"}
+    else if(diem<=8 && diem >5){a="kha"}
+    else if(diem>8 && diem <=10){a="gioi"}
+    // else alert("vui long enter so hop le");
+    else a="Sai"
+    document.getElementById("hide").innerHTML=a;
+
+}
+document.getElementById("ddiem").addEventListener("input",xetdiem);
+    </script> -->
+    <!-- <script>
+
+    let day = "Sun";
+let message = "";
+
+switch (day) {
+  case "Mon":
+    message = "Ngày đầu tuần";
+    
+break;
+  case "Wed":
+    message = "Ngày giữa tuần";
+break;
+  case "Sat":
+  case "Sun":
+    message = "Ngày nghỉ";
+}
+
+document.write(message);
+                    </script> -->
+
+    <script>
+        let a = +prompt("Nhap can nang di bro: ");
+        let b = +prompt("Nhap chieu cao di bro: ");
+        let bmi = a / (b ** 2);
+        if (bmi < 18.5) { alert("Suy dinh duong") }
+        else if (bmi < 25) { alert("Binh thuong") }
+        else if (bmi < 30) { alert("Qua can") }
+        else alert("Beo phi");
+    </script>
+
+</body>
+
+</html>
