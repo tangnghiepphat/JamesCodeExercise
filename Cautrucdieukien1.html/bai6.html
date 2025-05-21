@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai6</title>
+</head>
+<body>
+    <p>Tinh hoa hong dua tren doanh thu (don vi trieu vnd)</p>
+    <input type="text" name="" id="doanhthu" placeholder="nhap vao doanh thu cua hang">
+    <button onclick="kiemtra()">Kiemtra</button>
+
+    <script>
+        function kiemtra(){
+            let a =+document.getElementById("doanhthu").value;
+            let hoahong="";
+            if(a<100){ hoahong=a*0.15}
+            if(a>=100){ hoahong=a*0.25}
+            if(a>400){hoahong=a*0.4}
+            document.writeln(`hoa hong cua ban la ${hoahong}`);
+        }
+    </script>
+</body>
+</html>

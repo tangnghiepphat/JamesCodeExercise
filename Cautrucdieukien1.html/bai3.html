@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai3</title>
+</head>
+
+<body>
+    <p>Kiem tra so nguyen bat ky lon be hay bang 0</p>
+    <input id="soA" placeholder="Nhap so bat ky : ">
+    <button onclick="kiemtra()">Kiem tra</button>
+
+    <script>
+        function kiemtra() {
+            let a = +document.getElementById("soA").value;
+            if (a < 0)
+                document.writeln("a be hon 0")
+            if (a === 0) document.writeln("a = 0");
+            if (a > 0) document.writeln("a lon hon 0");
+        }
+
+    </script>
+</body>
+
+</html>

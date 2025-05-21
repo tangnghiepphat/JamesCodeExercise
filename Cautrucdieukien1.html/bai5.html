@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai5</title>
+</head>
+
+<body>
+    <p>Kiem tra hoc luc hoc sinh</p>
+    <input id="kt" placeholder="nhap diem kiem tra">
+    <input id="gk" placeholder="nhap diem giua ky">
+    <input id="ck" placeholder="nhap diem cuoi ky">
+    <button onclick="kiemtra()">Kiem tra</button>
+
+    <script>
+        function kiemtra() {
+            let diemKT = +document.getElementById("kt").value
+            let diemGiuaKy = +document.getElementById("gk").value
+            let diemCuoiKy = +document.getElementById("ck").value
+
+            let diemTB = (diemKT * 1 + diemGiuaKy * 2 + diemCuoiKy * 3) / 6;
+            // Xếp loại:
+            if (diemTB >= 8) {
+                alert("Xếp loại: Giỏi");
+            } else if (diemTB >= 6.5) {
+                alert("Xếp loại: Khá");
+            } else if (diemTB >= 5) {
+                alert("Xếp loại: Trung bình");
+            } else if (diemTB >= 3.5) {
+                alert("Xếp loại: Yếu");
+            } else {
+                alert("Xếp loại: Kém");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

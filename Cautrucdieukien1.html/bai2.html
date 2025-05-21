@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai2</title>
+</head>
+
+<body>
+
+    <input id="tuoi" placeholder="nhap tuoi cua ban: ">
+    <button onclick="kiemtra()">Kiem tra</button>
+    <h2 id="ketqua"></h2>
+    <script>
+        function kiemtra() {
+            let a = +document.getElementById("tuoi").value;
+            if (a < 14 || a > 18) {
+                document.writeln("Ban khong du dieu kien vao cap 3!")
+                return
+            } else 
+                document.writeln("Ban du dieu kien vao cap3 ! chuc mung!")
+
+            
+        }
+    </script>
+</body>
+
+</html>
