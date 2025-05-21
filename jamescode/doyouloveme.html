@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btnNo {
+            position: absolute;
+
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+
+        <h1>Do you love me ?</h1>
+        <button id="btnYes">Yes</button>
+        <button id="btnNo" onmousemove="hoverMouse()">No</button>
+    </center>
+
+    <script>
+        function hoverMouse() {
+            let cachtren = Math.random() * window.innerHeight * 0.8;
+            let cachduoi = Math.random() * window.innerWidth * 0.8;
+            document.getElementById("btnNo").style.top = cachtren + "px";
+            document.getElementById("btnNo").style.right = cachduoi + "px";
+
+        }
+        function hienthi(){
+            alert("toi cung yeu ban !");
+        }
+        document.getElementById("btnYes").addEventListener("click",hienthi);
+    </script>
+</body>
+
+</html>
